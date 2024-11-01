@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "a5d75696-d4fd-48cd-a5b0-c67f604112e4",
+		"name": "Trabalho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38340143"
+	},
+	"item": [
+		{
+			"name": "Retornar todos os Usuarios Cadastrados",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"get"
+					]
+				},
+				"description": "Retorna todos os usuários que existem no banco"
+			},
+			"response": []
+		},
+		{
+			"name": "Retorna o Usuario Cadastrado a partir do Login com o Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"get",
+						"1"
+					]
+				},
+				"description": "Retorna o usuario que tem o id requerido no banco de dados é passado o parametro por /1 ou /2 dependendo do id"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Usuário",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nome.teste\",\r\n    \"password\": \"1231231541\",\r\n    \"email\": \"email@teste.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nome.teste",
+							"description": "Caso parametro fique nulo vai retornar erro",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1231231541",
+							"description": "Caso senha for menor que 6 retorna erro",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "email@teste.com",
+							"description": "Caso tenha mesmo email no sistema retorna erro",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Cadastra no banco de dados com os requeridos parametros"
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Usuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/user/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"delete",
+						"1"
+					]
+				},
+				"description": "Exclui o usuario no banco de dados com o id que é passado no parametro por /1 ou /2 dependendo do id"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080/user",
+			"type": "string"
+		}
+	]
+}
