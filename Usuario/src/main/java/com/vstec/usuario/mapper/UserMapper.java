@@ -14,8 +14,7 @@ public class UserMapper {
 			return null;
 		}
 
-		return User.builder().id(request.id()).name(request.name()).password(request.password()).email(request.email())
-				.build();
+		return User.builder().name(request.name()).password(request.password()).email(request.email()).build();
 
 	}
 

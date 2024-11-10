@@ -6,8 +6,6 @@ import jakarta.validation.constraints.Size;
 
 public record UserRequest(
 
-		Integer id,
-
 		@NotBlank(message = "User name is required") 
 		String name,
 
