@@ -38,6 +38,7 @@ Or when happens an error it returns with the impossibility of exclusion and with
 Postman em manutenção 
 <br>
 Postman in maintenance 
+<br>
 👨🏾‍🔧 https://documenter.getpostman.com/view/38340143/2sAY4vi3vF 👨🏾‍🔧
 
 <br>
