@@ -1,7 +1,7 @@
 # User-Mapping
 #### [Swagger](http://localhost:8080/swagger-ui/index.html) <br> [Ler em Português](./images/portuguese.md)
 
-<div style="text-align: center;">
+<div align="center">
 Recieves an request type GET to return all the users registered.
 <img src="images/findAll.png">
 
@@ -23,8 +23,9 @@ Or when happens an error it returns with the impossibility of exclusion and with
 
 </div>
 
-### <div style="text-align: center;"> Postman in maintenance </div>
-<div style="text-align: center;">
+### <div align="center"> Postman in maintenance </div>
+
+<div align="center">
 
 👨🏾‍🔧[Postman Documentation](https://documenter.getpostman.com/view/38340143/2sAY4vi3vF) 👨🏾‍🔧 
 
