@@ -1,7 +1,7 @@
 # Mapeamento de Usuário
 #### [Swagger](http://localhost:8080/swagger-ui/index.html)
 
-### <div align="center">Controlador de Usuário</div>
+### <div align="center">Controlador de Usuário</div><br>
 
 #### Recebe uma requisição `GET` para `LOCALIZAR` todos os usuários cadastrados.
 ##### Tratamento de Erros:
