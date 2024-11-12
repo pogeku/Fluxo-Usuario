@@ -1,39 +1,43 @@
-# Fluxo-Usuario
+# Mapeamento de Usuário
 #### [Swagger](http://localhost:8080/swagger-ui/index.html)
 
-### <div align="center"> Usuario Controller</div>
+### <div align="center">Controlador de Usuário</div>
 
-#### Recebe uma requisição do tipo `GET` para retornar todos os usuários cadastrados.
+#### Recebe uma requisição `GET` para `LOCALIZAR` todos os usuários cadastrados.
+##### Tratamento de Erros:
 ---
 <img src="./images/findAll.png">
 
 <br>
 
-#### Recebe uma requisição do tipo `GET` para retornar o usuario cadastrado a partir do login informado, quando for o caso.
+#### Recebe uma requisição `GET` para `LOCALIZAR` o usuario cadastrado a partir do id provido.
+##### Tratamento de Erros:
 ---
 <img src="./images/findById.png">
 
 <br>
 
-#### Recebe uma requisição do tipo `POST` para `CADASTRAR` usuario e responde com o usuario cadastrado.
-#### Caso o usuario tentar se `CADASTRAR` e retornar com o usuario existente, ja existe um usuario com informações requisitadas ja em uso no banco.
+#### Recebe uma requisição `POST` para `CADASTRAR` um usuário e retorna o usuário registrado.
+##### Caso o usuario tentar se `CADASTRAR` e já existir um usuário com as mesmas informações, o sistema retornará uma mensagem informando que o usuário já existe no banco de dados.
 ---
 <img src="./images/createUser.png">
 
 <br>
 
-#### Recebe uma requisição do tipo `DELETE` para excluir o usuario a partir do login informado e responde com a confirmação da exclusão.
-#### Ou quando acontece um erro ele retorna com a impossibilidade de exclusão e a justificativa do erro.
+#### Recebe uma requisição `DELETE` para excluir o usuário com base no login informado e retorna a confirmação de exclusão bem-sucedida.
+##### Ou quando ocorrer um erro, o sistema retorna a impossibilidade de exclusão com a justificativa do erro.
 ---
 <img src="./images/deleteUser.png">
 </div>
 
-### <div align="center">Postman em manutenção </div>
+### <div align="center">Documentação do Postman em manutenção</div>
 
 <div align="center">
 
 👨🏾‍🔧[Postman Documentação](https://documenter.getpostman.com/view/38340143/2sAY4vi3vF) 👨🏾‍🔧 
 
-#### Todo o teste da API e seu funcionamento. <br>
-#### Quando você clicar iniciar o programa, acesse o mapeamento do utilizando o site acima. 
+#### Todos os testes e operações da API podem ser acessados através do link da documentação do Postman.
+#### Ao clicar para iniciar o programa, acesse o mapeamento usando o site acima.
 </div>
+
+<br><br><div align="right">A documentação sobre o tratamento de exceções será atualizada em breve</div>

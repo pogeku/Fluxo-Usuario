@@ -1,39 +1,43 @@
-# User-Mapping
+# User Mapping
 #### [Swagger](http://localhost:8080/swagger-ui/index.html) <br> [Ler em Português](./images/portuguese.md)
 
 ### <div align="center"> User Controller</div><br>
 
-#### Recieves an `GET` request to return all the users registered. 
+#### Recieves an `GET` request to `FIND` all the users registered. 
+##### Error Handling:
 ---
 <img src="images/findAll.png">
 
 <br>
 
-#### Recieves an `GET` request to return the user registered based on the login inserted.
+#### Recieves an `GET` request to `FIND` the user registered based on the provided id.
+##### Error Handling:
 ---
 <img src="images/findById.png">
 
 <br>
 
-#### Recieves an request type `POST` to `REGISTER` user and returns with the user registered.
-#### But if the user try to `REGISTER` and returns with existent user, already exist and user with the request info on user in the database.
+#### Recieves an `POST` request to `REGISTER` user and returns the user registered.
+##### If the user tries to `REGISTER` and a user with the same information already exists, the system will return a message informing that the user already exists in the database.
 ---
 <img src="images/createUser.png">
 
 <br>
 
-#### Recieves an request type `DELETE` to delete the user based on the login informed and returns with the confirmation of exclusion.
-#### Or when happens an error it returns with the impossibility of exclusion and with the justify of the error.  
+#### Recieves an `DELETE` request to delete the user based on the provided login and returns a successful deletion confirmation.
+##### Or, if an error occurs, the system will return the inability to delete with the error justification.  
 ---
 <img src="images/deleteUser.png">
 </div>
 
-### <div align="center"> Postman in maintenance </div>
+### <div align="center"> Postman Documentation under maintenance </div>
 
 <div align="center">
 
 👨🏾‍🔧[Postman Documentation](https://documenter.getpostman.com/view/38340143/2sAY4vi3vF)👨🏾‍🔧
 
-#### All the API testing and its operation <br>
+#### All API testing and operations can be accessed through the Postman documentation link.
 #### When you click to start the program, access the mapping using the website above.
 </div>
+
+<br><br><div align="right">Exception handling documentation will be updated furthermore</div>
