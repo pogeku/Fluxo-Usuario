@@ -1,5 +1,5 @@
 # User Mapping
-#### [Swagger](http://localhost:8080/swagger-ui/index.html) <br> [Ler em Português](./images/portuguese.md)
+#### [Swagger](http://localhost:8080/swagger-ui/index.html) <br> [Ler em Português](portuguese.md)
 
 ### <div align="center"> User Controller</div><br>
 
