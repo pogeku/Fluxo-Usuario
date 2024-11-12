@@ -39,4 +39,4 @@
 #### Todos os testes e operações da API podem ser acessados através do link da documentação do Postman.<br>Ao clicar para iniciar o programa, acesse o mapeamento usando o site acima.
 </div>
 
-<br><br><div align="right">A documentação sobre o tratamento de exceções será atualizada em breve</div>
+###### <br><br><div align="right">A documentação sobre o tratamento de exceções será atualizada em breve</div>
